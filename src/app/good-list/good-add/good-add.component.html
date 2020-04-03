@@ -1,0 +1,15 @@
+<div class="formContainer">
+    <div class="field">
+        <label for="">Название</label>
+        <input [(ngModel)]="data.title" type="text">
+    </div>
+    <div class="field">
+        <label for="">Цена</label>
+        <input [(ngModel)]="data.price" type="text">
+    </div>
+    <div class="field">
+        <label for="">Описание</label>
+        <textarea [(ngModel)]="data.description" ></textarea>
+    </div>
+    <button type="button" (click)='addHandler()'>Добавить</button>
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+    <div *ngFor='let item of items'>
+        <app-good-item 
+            [good]='item' 
+            (notify)='getMessage($event)' 
+            (deleted)='deleteElem($event)' 
+        ></app-good-item>
+    </div>
+    <b>{{ message }}</b>
+</div>
+
+<app-good-add (addEvent)='refreshList()'></app-good-add>

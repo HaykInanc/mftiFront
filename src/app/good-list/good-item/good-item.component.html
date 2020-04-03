@@ -1,0 +1,8 @@
+<div class="item">
+    <p>{{ good.pk }}</p>
+    <p>{{ good.title }}</p>
+    <p>{{ good.price }}</p>
+    <p>{{ good.description }}</p>
+    <button type="button" (click)='deleteHandler(good.pk)'>Удалить</button>
+    <button type="button" (click)='send()'>Отправить</button>
+</div>
